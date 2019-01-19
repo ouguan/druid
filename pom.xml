@@ -97,6 +97,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
+					<skipTests>true</skipTests>  
 					<includes>
 						<include>**/bvt/**/*.java</include>
 					</includes>
@@ -557,6 +558,12 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
 			<version>2.5.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.xugu</groupId>
+			<artifactId>cloudjdbc</artifactId>
+			<version>10.0</version>
 			<scope>provided</scope>
 		</dependency>
 

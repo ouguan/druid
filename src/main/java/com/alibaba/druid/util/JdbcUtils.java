@@ -812,6 +812,10 @@ public final class JdbcUtils implements JdbcConstants {
         if (JdbcConstants.POSTGRESQL.equals(dbType)) {
             return PGUtils.showTables(conn);
         }
+        
+        if (JdbcConstants.XUGU.equals(dbType)) {
+            return XuguUtils.showTables(conn);
+        }
         throw new SQLException("show tables dbType not support for " + dbType);
     }
 
